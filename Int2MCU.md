@@ -1,0 +1,5 @@
+# MCU - Final Design #
+
+The brain of Crossbow 2.0 was the PIC24HJ64GP502.  It operates on 3.3 volts, has a 16-bit processor, and was chosen in order to accommodate the needs of the project.  It has 28 pins, allowing for many GPIO connections.  The PIC 24 microcontroller also supports the remapping of GPIO pins. This microcontroller also supports the SPI serial communication protocol, which was necessary to communicate with the OLED display.  It also supports the I2C serial communication protocol, which was necessary to communicate with the capacitive touch breakout board.  Also included on the chip is an ECAN module.  This module was necessary in order to communicate with the M.A.G.E. HIU via the CANbus transceiver.  The PIC communicates with the audio breakout board using three GPIO pins (Data, CLK, and RESET) via serial communication.  IR send and IR receive each utilize only one GPIO pin.  The LED driver for the LED bars use two GPIO pins (Data and CLK).
+
+![http://i.imgur.com/Uhw4yPF.png](http://i.imgur.com/Uhw4yPF.png)

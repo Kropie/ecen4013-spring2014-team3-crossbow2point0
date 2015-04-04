@@ -1,0 +1,5 @@
+# Visual - Final Design #
+
+The visual block of the crossbow consists of three LED bars and one OLED display. The LED bars are driven by a TLC 5917, which is an 8 bit LED driver shift register. The LED bars have 10 LEDs on each bar making a total of 30 LEDs. Each pin of the TLC 5917 has 4 LEDs connected to it, except for the last pin which only has two. When the user of the crossbow swipes their finger across the capacitive touch surface, the LED bars will light up four at a time, which gives the user a sense of how “strong” the emitted IR signal will be. The OLED display is being controlled by the PIC24 microcontroller via the SPI serial communication protocol.  The OLED has different animations for when the crossbow has been fired or hit by an IR attack. The OLED also displays the current health of the crossbow, the number of bolts remained to be fired, and if the crossbow is loaded. The visual block, as a whole, requires eight pins from the PIC24 and will only use about 200mA at max power draw.
+
+![http://i.imgur.com/CHqHK8H.png](http://i.imgur.com/CHqHK8H.png)
